@@ -1,0 +1,6 @@
+[submodule "bowtie-clone-frontend"]
+	path = bowtie-clone-frontend
+	url = ./bowtie-clone-frontend/
+[submodule "bowtie-clone-backend"]
+	path = bowtie-clone-backend
+	url = ./bowtie-clone-backend/
