@@ -1,6 +1,6 @@
 [submodule "bowtie-clone-frontend"]
 	path = bowtie-clone-frontend
-	url = ./bowtie-clone-frontend/
+	url = https://github.com/yah300222000/bowtie-clone-frontend.git
 [submodule "bowtie-clone-backend"]
 	path = bowtie-clone-backend
-	url = ./bowtie-clone-backend/
+	url = https://github.com/yah300222000/bowtie-clone-backend.git
