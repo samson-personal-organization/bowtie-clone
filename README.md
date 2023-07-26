@@ -44,22 +44,30 @@ yarn install
 ### Git Operation
 
 Create a new branch for submodule
+
 ```bash
-cd bowtie-clone-frontend/
-git checkout -b develop
+cd <submodule-name>/
+git checkout -b <branch-name>
 cd ../
 
 ## run this command
-git config -f .gitmodules submodule.bowtie-clone-frontend.branch develop
+git config -f .gitmodules submodule.<submodule-name>.branch <branch-name>
 ## or directly modify the .gitmodules at root folder
-[submodule "bowtie-clone-frontend"]
-	path = bowtie-clone-frontend
-	url = https://github.com/samson-personal-organization/bowtie-clone-frontend.git
-	branch = develop
+[submodule "<submodule-name>"]
+	path = <submodule-name>
+	url = https://github.com/samson-personal-organization/<submodule-name>.git
+	branch = <branch-name>
 
 ## then sync it to .git/config
 git submodule sync
 
+## push newly created submodule branches
+git submodule foreach git push origin <branch-name>
+```
+
+New commits afterward
+
+```bash
 git push --recurse-submodules=on-demand
 ```
 
