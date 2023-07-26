@@ -1,6 +1,8 @@
 [submodule "bowtie-clone-frontend"]
 	path = bowtie-clone-frontend
 	url = https://github.com/samson-personal-organization/bowtie-clone-frontend.git
+	branch = develop
 [submodule "bowtie-clone-backend"]
 	path = bowtie-clone-backend
 	url = https://github.com/samson-personal-organization/bowtie-clone-backend.git
+	branch = develop

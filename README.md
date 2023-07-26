@@ -41,6 +41,28 @@ npm install
 yarn install
 ```
 
+### Git Operation
+
+Create a new branch for submodule
+```bash
+cd bowtie-clone-frontend/
+git checkout -b develop
+cd ../
+
+## run this command
+git config -f .gitmodules submodule.bowtie-clone-frontend.branch develop
+## or directly modify the .gitmodules at root folder
+[submodule "bowtie-clone-frontend"]
+	path = bowtie-clone-frontend
+	url = https://github.com/samson-personal-organization/bowtie-clone-frontend.git
+	branch = develop
+
+## then sync it to .git/config
+git submodule sync
+
+git push --recurse-submodules=on-demand
+```
+
 ## Sample Reference
 
 [CDK CodePipeline build deploy stack source code](https://github.com/aws-samples/aws-cdk-examples/blob/master/typescript/codepipeline-build-deploy/lib/codepipeline-build-deploy-stack.ts)
